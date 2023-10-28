@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Product page </title>
+    <link rel="stylesheet" href="kam2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+
+    <!-- =============================== * navbar * ============================================ -->
+
+     <div class="hedder">
+        <div class="navbar">
+
+
+
+
+            <div class="logo">
+                <p>
+                    KaM ChAhIyE
+                </p>
+            </div>
+
+
+
+
+
+
+            <div class="contry_select" id="contry">
+                <div class="select">
+                    <p id="text"> Select Your Location </p>
+                    <i class="fa-solid fa-chevron-down" id="moving"></i>
+                </div>
+
+
+                <ul class="option_box" id="list">
+                    <li class="option current-location" onclick="myfunction('St. andrews intitude..')">
+                        <i class="fa-sharp fa-solid fa-location-crosshairs color-blue" style=" color: blue;font-size: 22px; margin-top: 10px;"></i>
+                        <p style=" color: blue; font-size: 22px;" >Use current location<br>
+                            <span  style=" color: blue; font-size: 16px;"> St andrew's intitude... </span>
+                            </p>
+
+                        
+                    </li>
+                    <hr>
+
+                    <li class="option" onclick="myfunction('Manesar Sector 6, Gurgaon')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Manesar Sector 6, Gurgaon</p>
+                    </li>
+                    <li class="option" onclick="myfunction('Farrukhnagar gurgaon')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Farrukhnagar gurgaon</p>
+                    </li>
+                    <li class="option" onclick="myfunction('Kho gaon manesar sec 3')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Kho gaon manesar sec 3</p>
+                    </li>
+                    <li class="option" onclick="myfunction('Naharpur sec 6 manesar')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Naharpur sec 6 manesar</p>
+                    </li>
+                    <li class="option" onclick="myfunction('Basai sec 27 gurgaon')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Basai sec 27 gurgaon</p>
+                    </li>
+                </ul>
+            </div>
+
+
+
+
+
+            <div class="search_box">
+                <input type="text" class="searchclass" id="searchid" placeholder="Find job, Near of your....">
+                <p> <i class="fa-solid fa-magnifying-glass"></i> </p>
+            </div>
+
+
+
+
+            <div class="language" >
+                
+                <p id="eng_tag"> English </p>
+                
+
+                <ul class="hin_eng">
+                    <li onclick="languagekam('हिन्दी')"> हिन्दी </li>
+                    <li onclick="languagekam('English')" > English</li>
+                </ul>
+
+            </div>
+
+
+
+
+            <div class="messeage">
+               <a href="kam1.html"><i class="fa-regular fa-comment"></i></a>
+            </div>
+
+
+
+
+            <div class="messeage">
+             <a href="notification.html"><i class="fa-regular fa-bell"></i></a>
+            </div>
+
+
+
+
+
+            <div class="your_logo">
+                <div class="girl_img" id="girl_img_id">
+                    <img src="aa.jpg">
+                </div>
+
+                <div class="dropdwon" id="gropdwonid">
+                    <div class="nameandimg">
+                        <img src="aa.jpg">
+                        <p> Roshan mishra </p>
+                    </div>
+
+                    <ul>
+                        <li>
+                            <i class="fa-regular fa-user"></i>
+                            <p>My Account</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-box"></i>
+                            <p>My Posted job</p>
+                        </li>
+                        <hr>
+                        <li>
+                            <i class="fa-regular fa-circle-question"></i>
+                          <a href="help.html"><p>Help</p></a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-gear"></i>
+                         <a href="settingpage.html"> <p>Setting</p> </a>
+                        </li>
+                        <hr>
+
+                        <li>
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                           <a href="logoutsure.html"><p>Log Out</p></a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="selling_page">
+                <a href="jobform.html">
+                <button> 
+                  <p>Post Job</p>
+                </button>
+                </a>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+    <!-- =============================== * ad 1 * ============================================ -->
+
+
+    <div class="ads_img2">
+        <img src="add.png">
+        <i class="fa-regular fa-rectangle-xmark" id="adicon2"></i>
+    </div>
+
+
+
+    <!-- =============================== * product img * ============================================ -->
+
+
+
+    <div class="product_img">
+
+
+        <div class="image_discription" >
+            <div class="swiper">
+                <div class="swiper-wrapper" >
+
+                    <div class="swiper-slide"> <img src="worker6.jpg" > </div>
+                    <div class="swiper-slide"> <img src="worker6.jpg"></div>
+                    <div class="swiper-slide"> <img src="worker6.jpg"></div>
+                    <div class="swiper-slide"> <img src="worker6.jpg"></div>
+
+                </div>
+
+                <div class="swiper-pagination"></div>
+
+
+                <div class="swiper-button-prev" id="pre"></div>
+                <div class="swiper-button-next" id="nex"></div>
+            </div>
+
+            <div class="descriptiopn">
+                <h3> descriptiopn </h3>
+                <p>We need a computer teacher boy or girl.  <br>
+                    Knowladge required ADCA DCA TAlly Advace Excel<br>
+                 If anyone intrested than contact me. 
+                    Worker must be thare age 18 year<br>
+                    ₹12000/month</p>
+            </div>
+        </div>
+
+        <div class="product_details">
+            <div class="box">
+                <div class="price">
+                    <h3> ₹12000/month</h3>
+                    <div>
+                        <p><i class="fa-solid fa-share-nodes"></i> </p>
+                        <p> <i class="fa-regular fa-heart"></i> </p>
+                    </div>
+                </div>
+                <span> Computer teacher </span>
+                <div class="location">
+                    <p>Ashram academy computer center</p>
+                    <p>Today</p>
+                </div>
+            </div>
+
+            <div class="box" id="box2">
+                <p class="Seller_description"> Job giver Description </p>
+                <div class="seller_detail">
+                    <img src="aw.jpg">
+                    <div>
+                        <h2> Jyoti sharma </h2>
+                        <p>Member since Nov 2021</p>
+                    </div>
+                </div>
+                <a href="kam1.html"> Chat with Job Provider  </a>
+
+            </div>
+
+         <div class="box" id="box3">
+              <h2> Posted in </h2>
+              <p>Gurgaon , Haryana</p>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14041.489573260418!2d76.93340589999998!3d28.37781830000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1679815490324!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+         </div>
+
+
+
+        </div>
+
+
+
+    </div>
+    <!-- =============================== * downlode * ============================================ -->
+
+
+    <div class="downlode_app">
+        <div class="downlode">
+           <span style="font-size:40px ; font-weight: bold; margin-right: 90px;"> Kam Chahiye ?</span>
+
+            <div class="text">
+                <h1> TRY THE KAM CHAHIYE APP</h1>
+                <p>Find Job Near you and Post Job Near You just about anything using <br>
+                    the app on your mobile.</p>
+            </div>
+            <div class="downlode_store">
+                <p> GET YOUR APP TODAY </p>
+                <img src="images/play store.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+      <!-- =============================== * footer * ============================================ -->
+
+
+
+    <div class="Main_footer">
+        <div class="footer">
+            <div class="footer_box">
+                <h2>POPULAR LOCATIONS</h2>
+                <p> Delhi</p>
+                <p>Patna</p>
+                <p>Gurgaon</p>
+                <p>Haryana</p>
+            </div>
+            <div class="footer_box">
+                <h2>TRENDING LOCATIONS</h2>
+                <p> IMT Manesar</p>
+                <p>Gurgaon</p>
+                <p>Delhi</p>
+                <p>Patna</p>
+            </div>
+            <div class="footer_box">
+                <h2>ABOUT US</h2>
+                <p> About Kam Chahiye Group</p>
+                <p>Careers</p>
+                <p>Contact Us</p>
+                <p>kam chahiyePeople</p>
+            </div>
+            <div class="footer_box">
+                <h2>Kam chahiye</h2>
+                <p> Help</p>
+                <p>Legal & Privacy information</p>
+                <p>Blog</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        //  =============================== * navbar * ============================================
+
+        let contry = document.getElementById('contry');
+        let moving = document.getElementById('moving');
+        let text = document.getElementById('text');
+        let list = document.getElementById('list');
+
+
+        contry.addEventListener('click', () => {
+            list.classList.toggle('hidden');
+            moving.classList.toggle('roted')
+        });
+        function myfunction(omkar) {
+            text.innerHTML = omkar;
+        }
+
+
+        let eng_tag = document.getElementById('eng_tag');
+        let hin_eng = document.querySelector('.hin_eng');
+        let language = document.querySelector('.language');
+
+
+        language.addEventListener('click', () => {
+            hin_eng.classList.toggle('display_div');
+        });
+        function languageolx(anyone) {
+            eng_tag.innerHTML = anyone;
+        }
+
+        let girl_img_id = document.getElementById('girl_img_id');
+        let gropdwonid = document.getElementById('gropdwonid');
+
+        girl_img_id.addEventListener('click', () => {
+            gropdwonid.classList.toggle('block_div')
+        });
+
+
+
+
+        //  =============================== * ad 2 * ============================================
+
+
+
+        let adicon2 = document.getElementById('adicon2');
+        let ads_img2 = document.querySelector('.ads_img2');
+
+        adicon2.addEventListener('click', () => {
+            ads_img2.style = 'display: none';
+        });
+
+
+
+
+        //  =============================== * product img* ============================================
+
+
+         const swiper = new Swiper('.swiper', {
+
+            loop: true,
+
+
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+        });
+
+
+    </script>
+   
+</body>
+
+</html>

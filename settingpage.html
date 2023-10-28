@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Create Password Page</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            max-width: 600px;
+            margin-top: 30px;
+            position: relative;
+
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f2f2f2;
+            padding: 60px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            margin-top: 20px;
+        }
+
+        input[type=password] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            box-sizing: border-box;
+            border-radius: 5px;
+            border: none;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #3e8e41;
+        }
+
+        label {
+            font-size: 25px;
+        }
+
+        .privacy {
+            position: absolute;
+            top: 0;
+            right: 800px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 40px;
+            font-size: 20px;
+        }
+
+        .privacy h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .privacy ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .privacy ul li a {
+            list-style: none;
+            text-align: none;
+        }
+
+        .privacy li {
+
+            margin-bottom: 10px;
+        }
+
+        .privacy li:last-child {
+            margin-bottom: 0;
+        }
+
+        .privacy button {
+            background-color: #f44336;
+        }
+
+        .privacy button:hover {
+            background-color: #d32f2f;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <h1>Create a New Password</h1>
+
+            <label for="new-password">New Password:</label>
+            <input type="password" id="new-password">
+
+            <label for="confirm-password">Confirm New Password:</label>
+            <input type="password" id="confirm-password">
+
+            <button type="button" onclick="createPassword()">Create Password</button>
+        </form>
+
+        <div class="privacy">
+            <h1>Privacy</h1>
+            <ul>
+                <li><a href="#">Notification Settings</a></li>
+                <li><a href="logoutsure.html">Log Out from All Devices</a></li>
+                <li><a href="delete.html">account delete permanently</a></li>
+
+            </ul>
+        </div>
+    </div>
+    <script>
+        function createPassword() {
+
+            var newPassword = document.getElementById("new-password").value;
+            var confirmPassword = document.getElementById("confirm-password").value;
+
+            // Check if new password matches confirm password
+            if (newPassword !== confirmPassword) {
+                alert("New password and confirm password do not match!");
+                return;
+            }
+            document.getElementById("new-password").value = "";
+            document.getElementById("confirm-password").value = "";
+
+            alert("Password successfully created!");
+        }
+    </script>
+</body>
+
+</html>

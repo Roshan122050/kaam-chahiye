@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Login Form</title>
+	<style>
+		body {
+			background-color:#f7efef;
+		}
+
+		.form-wrapper {
+			background-color: rgba(255, 255, 255, 0.8);
+			border-radius: 5px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+			padding: 20px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 400px;
+		}
+
+		form {
+			display: flex;
+			flex-direction: column;
+		}
+
+		label {
+			font-weight: bold;
+		}
+
+		input[type="text"],
+		input[type="password"] {
+			padding: 10px;
+			border-radius: 5px;
+			margin-bottom: 10px;
+			border: 1px solid;
+			
+			border-bottom: 1px solid #ffffff;
+		}
+
+		button[type="submit"],
+		button[type="button"] {
+			background-color: #4CAF50;
+			color: #fff;
+			border: none;
+			padding: 10px;
+			border-radius: 5px;
+			cursor: pointer;
+			margin-right: 20px;
+			transition: background-color 0.3s ease;
+		}
+
+		button[type="submit"]:hover,
+		button[type="button"]:hover {
+			background-color: #3e8e41;
+		}
+
+		h2 {
+			margin-top: 0;
+			margin-bottom: 20px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="form-wrapper">
+		<form>
+			<h2>Login</h2>
+			<label for="username">Username:</label>
+			<input type="text" id="username" name="username">
+
+			<label for="password">Password:</label>
+			<input type="password" id="password" name="password">
+
+			<div>
+				<button type="submit">Login</button>
+				<button type="button" onclick="alert('sure forgot your password')">Forgot Password</button>
+			<a href=" signup.html">	<button type="button" onclick="alert('you are not signed in!!')">Sign Up</button></a>
+			</div>
+		</form>
+	</div>
+	<script>
+		const form = document.querySelector('form');
+		form.addEventListener('submit', (event) => {
+			event.preventDefault();
+
+			const username = document.querySelector('#username').value;
+			const password = document.querySelector('#password').value;
+
+			if (username === 'admin' && password === 'password') {
+				alert('Login successful!');
+			} else {
+				alert('Invalid username or password.');
+			}
+		});
+
+	</script>
+</body>
+
+</html>

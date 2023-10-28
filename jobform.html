@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Job Update Form</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #fffbfb;
+			color: #000000;
+
+		}
+
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+			border: 3px solid black;
+		}
+
+		h1 {
+			text-align: center;
+			margin-bottom: 20px;
+			font-size: 60px;
+		}
+
+		form {
+			display: flex;
+			flex-direction: column;
+		}
+
+		label {
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+
+		input,
+		select,
+		textarea {
+			padding: 10px;
+			margin-bottom: 20px;
+			border-radius: 5px;
+			border: none;
+			background-color: rgb(131, 163, 176);
+			color: rgb(255, 255, 255);
+			
+		}
+
+		input[type="submit"] {
+			background-color: #100e0e;
+			color: #fff;
+			cursor: pointer;
+			width: 200px;
+			margin-left: 250px;
+		}
+
+		input[type="submit"]:hover {
+			background-color: #2044e7;
+		}
+
+		hr {
+			border: none;
+			height: 4px;
+			color: #333;
+			background-color: #333;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<h1>Job Update</h1>
+		<hr>
+		<form>
+			<label for="title">Title:</label>
+			<input type="title" id="title" name="title" required>
+
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required>
+
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+
+			<label for="worktype">Work Type:</label>
+			<input type="worktype" id="worktype" name="worktype" required>
+
+
+			<label for="workingflexibility">working flexibility:</label>
+			<select id="workingflexibility" name="workingflexibility" required>
+				<option value="">flexibility</option>
+				<option value="hourly">hourly</option>
+				<option value="daily">daily</option>
+				<option value="weakly">weakly</option>
+				<option value="monthly">monthly</option>
+
+			</select>
+
+			<label for="location">location:</label>
+			<input type="location" id="location" name="location" required>
+
+
+			<label for="message">Message:</label>
+			<textarea id="message" name="message" required></textarea>
+
+			<input type="submit" value="Submit">
+		</form>
+	</div>
+	<script>
+		const form = document.querySelector('form');
+		const titleInput = document.querySelector('#title');
+		const nameInput = document.querySelector('#name');
+		const emailInput = document.querySelector('#email');
+		const worktypeInput = document.querySelector('#worktype');
+		const workingflexibilityInput = document.querySelector('#workingflexibility');
+		const locationInput = document.querySelector('#location');
+		const messageInput = document.querySelector('#message');
+
+		form.addEventListener('submit', (e) => {
+			e.preventDefault();
+
+			if (titleInput.value.trim() === '') {
+				alert('Please enter your title.');
+				titleInput.focus();
+				return false;
+			}
+
+			if (nameInput.value.trim() === '') {
+				alert('Please enter your name.');
+				nameInput.focus();
+				return false;
+			}
+
+			if (emailInput.value.trim() === '') {
+				alert('Please enter your email.');
+				emailInput.focus();
+				return false;
+			}
+
+			if (worktypeInput.value.trim() === '') {
+				alert('Please select your worktype.');
+				worktypeInput.focus();
+				return false;
+			}
+
+			if (workingflexibilityInput.value.trim() === '') {
+				alert('Please select your workingflexibility.');
+				workingflexibilityInput.focus();
+				return false;
+			}
+
+			if (locationInput.value.trim() === '') {
+				alert('Please select your location.');
+				locationInput.focus();
+				return false;
+			}
+
+			if (messageInput.value.trim() === '') {
+				alert('Please enter a message.');
+				messageInput.focus();
+				return false;
+			}
+
+			alert('Form submitted successfully!');
+		});
+		
+
+
+	</script>
+</body>
+
+</html>

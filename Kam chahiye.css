@@ -1,0 +1,74 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+/*<!=============================== Navbar ===============================================*/
+.Location_Selector{
+	width: 250px;
+	
+
+}
+.selector i{
+	font-size: 20px;
+}
+.selector{
+	font-size: 20px;
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 10px;
+	cursor: pointer;
+	background-color: rgba(255, 255, 255, 0.7);
+	border: 2px solid black;
+	width: 100%;
+	font-weight: bold;
+}
+.selector p{
+	width: 100%;
+}
+.selector p .input{
+	width: 100%;
+	font-size: 20px;
+	border: none;
+}
+.selector p .input:focus{
+	outline: none;
+}
+.selector span{
+	margin-top: -10px;
+	font-size: 35px;
+	font-weight: bold;
+	transform: rotate(180deg);
+}
+.option{
+	display: flex;
+	width: 250px;
+	padding: 10px 10px;
+	background-color: white;
+	box-shadow: 2px 2px 10px solid grey;
+	align-items: center;
+	font-size: 20px;
+}
+.option:hover{
+	background-color: #c7dcff;
+}
+.option p{
+	margin-left:25px ;
+	color: #444444;
+}
+.option-box{
+	box-shadow: 0 0 10px grey;
+	display: none;
+	height: 300px;
+	overflow-y  : scroll;
+	width: 100%;
+}
+.Location_Selector:hover .option-box{
+	display: block;
+}
+.Location_Selector:hover .selector span{
+	transform: rotate(180deg);
+}
+

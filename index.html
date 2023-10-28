@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="kam.css">
+    <title> Kam Chahiye.com</title>
+</head>
+
+<body>
+
+
+    <!-- =============================== * navbar * ============================================ -->
+
+    <div class="hedder">
+        <div class="navbar">
+
+
+
+
+            <div class="logo">
+                <p>
+                    KaM ChAhIyE
+                </p>
+            </div>
+
+
+
+
+
+
+            <div class="contry_select" id="contry">
+                <div class="select">
+                    <p id="text"> Select Your Location </p>
+                    <i class="fa-solid fa-chevron-down" id="moving"></i>
+                </div>
+
+
+                <ul class="option_box" id="list">
+                    <li class="option current-location" onclick="myfunction('St. andrews intitude..')">
+                        <i class="fa-sharp fa-solid fa-location-crosshairs color-blue" style=" color: blue;font-size: 22px; margin-top: 10px;"></i>
+                        <p style=" color: blue; font-size: 22px;" >Use current location<br>
+                            <span  style=" color: blue; font-size: 16px;"> St andrew's intitude... </span>
+                            </p>
+
+                        
+                    </li>
+                    <hr>
+
+                    <li class="option" onclick="myfunction('Manesar Sector 6, Gurgaon')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Manesar Sector 6, Gurgaon</p>
+                    </li>
+                    <li class="option" onclick="myfunction('Farrukhnagar gurgaon')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Farrukhnagar gurgaon</p>
+                    </li>
+                    <li class="option" onclick="myfunction('Kho gaon manesar sec 3')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Kho gaon manesar sec 3</p>
+                    </li>
+                    <li class="option" onclick="myfunction('Naharpur sec 6 manesar')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Naharpur sec 6 manesar</p>
+                    </li>
+                    <li class="option" onclick="myfunction('Basai sec 27 gurgaon')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Basai sec 27 gurgaon</p>
+                    </li>
+                </ul>
+            </div>
+
+
+
+
+
+            <div class="search_box">
+                <input type="text" class="searchclass" id="searchid" placeholder="Find job, Near of your....">
+                <p> <i class="fa-solid fa-magnifying-glass"></i> </p>
+            </div>
+
+
+
+
+            <div class="language" >
+                
+                <p id="eng_tag"> English </p>
+                
+
+                <ul class="hin_eng">
+                    <li onclick="languagekam('हिन्दी')"> हिन्दी </li>
+                    <li onclick="languagekam('English')" > English</li>
+                </ul>
+
+            </div>
+
+
+
+
+            <div class="messeage">
+               <a href="kam1.html"><i class="fa-regular fa-comment"></i></a>
+            </div>
+
+
+
+
+            <div class="messeage">
+             <a href="notification.html"><i class="fa-regular fa-bell"></i></a>
+            </div>
+
+
+
+
+
+            <div class="your_logo">
+                <div class="girl_img" id="girl_img_id">
+                    <img src="aa.jpg">
+                </div>
+
+                <div class="dropdwon" id="gropdwonid">
+                    <div class="nameandimg">
+                        <img src="aa.jpg">
+                        <p> Roshan mishra </p>
+                    </div>
+
+                    <ul>
+                        <li>
+                            <i class="fa-regular fa-user"></i>
+                            <p>My Account</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-box"></i>
+                            <p>My Posted job</p> 
+                        </li>
+                        <hr>
+                        <li>
+                            <i class="fa-regular fa-circle-question"></i>
+                          <a href="help.html"><p>Help</p></a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-gear"></i>
+                         <a href="settingpage.html"> <p>Setting</p> </a>
+                        </li>
+                        <hr>
+
+                        <li>
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                           <a href="logoutsure.html"><p>Log Out</p></a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="selling_page">
+                <a href="jobform.html">
+                <button> 
+                  <p>Post Job</p>
+                </button>
+                </a>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+
+
+    <!-- =============================== * ad 1 * ============================================ -->
+
+
+
+    <div class="ad_img">
+        <img src="add.jpg" >
+        <i class="fa-regular fa-rectangle-xmark" id="ad_icon"></i>
+    </div>
+
+
+
+
+    <!-- =============================== * JOB List * ============================================ -->
+
+
+    <div class="product">
+        <div class="First_row">
+             <div class="box">
+                <a href="kam2.html">
+                    <img src="worker1.jpg">
+                    <h2>₹500/day</h2>
+                    <p>5 worker required </p>
+                    <div class="addres_data">
+                        <p> IMT Manesar sec-3</p>
+                        <p>Today</p>
+                    </div>
+                </a>
+            </div>
+            <div class="box">
+                <a href="kam3.html">
+                <img src="worker2.jpg">
+                <h2> ₹400/day  </h2>
+                <p> 3 Loder worker Required</p>
+                <div class="addres_data">
+                    <p>Sec-6 kho gaon Rupa Pvt. Ltd</p>
+                    <p> 2 day ago</p>
+                </div>
+                </a>
+            </div>
+            <div class="box">
+                <a href="kam4.html">
+                <img src="worker3.jpg">
+                <h2> ₹10000/month</h2>
+                <p> Kirana Dukan ke liye 2 ladke</p>
+                <div class="addres_data">
+                    <p>Farrukhnagar near rao shab shop</p>
+                    <p> Today </p>
+                </div>
+                </a>
+            </div>
+            <div class="box">
+                <a href="kam5.html">
+                <img src="worker4.jpg">
+                <h2> ₹100/hour </h2>
+                <p> Pamphlet distributor boy </p>
+                <div class="addres_data">
+                    <p>Naharpur sec 6 Imt Manesar</p>
+                    <p> Today </p>
+                </div>
+                </a>
+            </div>
+        </div>
+
+
+
+        <div class="First_row">
+            <div class="box">
+                <a href="kam6.html">
+                <img src="worker5.jpg">
+                <h2> ₹8000/month </h2>
+                <p> Boy/Girl teacher for class 1st to 5th</p>
+                <div class="addres_data">
+                    <p>Bans Gaon ,Friend Public school</p>
+                    <p> DEC 24 </p>
+                </div>
+                </a>
+            </div>
+            <div class="box">
+                
+                <a href="kam7.html">
+                <img src="worker6.jpg" height="140px">
+                <h2> ₹12000/month </h2>
+                <p> Computer teacher</p>
+                <div class="addres_data">
+                    <p>Ashram academy Computer center</p>
+                    <p> JAN 29 </p>
+                </div>
+                </a>
+            </div>
+            <div class="box">
+                <a href="kam8.html">
+                <img src="worker7.jpg" height="170px">
+                <h2> ₹10500/month </h2>
+                <p> Dhaga cutting work</p>
+                <div class="addres_data">
+                    <p>Richa Global Sec-6 plot no. 207</p>
+                    <p> Today </p>
+                </div>
+                </a>
+            </div>
+            <div class="box">
+                <a href="kam9.html">
+                <img src="worker8.jpg" height="160px">
+                <h2> ₹50/hour </h2>
+                <p> Part time teaching work class 6th to 8th </p>
+                <div class="addres_data">
+                    <p>ANDHERI WEST, MUMBAI</p>
+                    <p> FEB 02 </p>
+                </div>
+                </a>
+            </div>
+        </div>
+
+
+
+
+        <div class="First_row">
+            <div class="box">
+                <a href="kam10.html">
+                <img src="worker9.jpg">
+                <h2> ₹800/month </h2>
+                <p> Mobile shop ke liye ladke </p>
+                <div class="addres_data">
+                    <p>Navada Jay bhandari comunication</p>
+                    <p> FEB 11 </p>
+                </div>
+                </a>
+
+            </div>
+            <div class="box">
+                <a href="kam11.html">
+                <img src="worker10.jpg">
+                <h2> ₹4000/month </h2>
+                <p> 2 house maid for room clean</p>
+                <div class="addres_data">
+                    <p>SGL Towar sec 7 gurgaon</p>
+                    <p> Today </p>
+                </div>
+                </a>
+            </div>
+            <div class="box">
+                <a href="kam12.html">
+                <img src="worker11.jpg">
+                <h2> ₹10000/month </h2>
+                <p> 2 boy for cloth shop</p>
+                <div class="addres_data">
+                    <p>Shree ram ji garment gurgaon hayatpur</p>
+                    <p> FEB 25 </p>
+                </div>
+                </a>
+            </div>
+            <div class="box">
+                <a href="kam13.html">
+                <img src="worker12.jpg">
+                <h2> ₹12500/month </h2>
+                <p> 5 Tailor requirment </p>
+                <div class="addres_data">
+                    <p>Upma Pvt Ltd. sec-2 IMT</p>
+                    <p> Today </p>
+                </div>
+                </a>
+            </div>
+        </div>
+
+
+
+        <div class="First_row">
+            <div class="box">
+                <a href="kam14.html">
+                <img src="worker13.jpg">
+                <h2> ₹14000/month </h2>
+                <p> Loder worker requirment </p>
+                <div class="addres_data">
+                    <p>Raj kot delhi</p>
+                    <p> JAN 14 </p>
+                </div>
+                </a>
+            </div>
+            <div class="box">
+                <a href="kam15.html">
+                <img src="worker14.jpg">
+                <h2> ₹6,000/month </h2>
+                <p> House Keeping</p>
+                <div class="addres_data">
+                    <p>DLF sec 7 gurgaon</p>
+                    <p> JUN 10</p>
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <a href="kam16.html">
+                <img src="worker15.jpg">
+                <h2> ₹1,2000 </h2>
+                <p> cyber cafe shop boy </p>
+                <div class="addres_data">
+                    <p>Rakhnauri navada</p>
+                    <p> JAN 7 </p>
+                </div>
+                </a>
+            </div>
+            <div class="box">
+                <a href="kam17.html"></a>
+                <img src="worker16.jpg" height="150px">
+                <h2> ₹8000/month </h2>
+                <p> Pamplate distributer boy</p>
+                <div class="addres_data">
+                    <p>Gurgaon sec 14</p>
+                    <p> Today </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <!-- =============================== * LOde more * ============================================ -->
+
+
+
+    <div class="LOde_more">
+        <button id="Lode_more_id"> Lode More </button>
+
+
+
+        <div class="lode-More_products" id="lode_more_products_id">
+            <div class="First_row">
+                 <div class="box">
+                <a href="kam2.html">
+                    <img src="worker1.jpg">
+                    <h2>₹500/day</h2>
+                    <p>5 worker required </p>
+                    <div class="addres_data">
+                        <p> IMT Manesar sec-3</p>
+                        <p>Today</p>
+                    </div>
+                </a>
+            </div>
+            <div class="box">
+                <a href="kam3.html">
+                <img src="worker2.jpg">
+                <h2> ₹400/day  </h2>
+                <p> 3 Loder worker Required</p>
+                <div class="addres_data">
+                    <p>Sec-6 kho gaon Rupa Pvt. Ltd</p>
+                    <p> 2 day ago</p>
+                </div>
+                </a>
+            </div>
+            <div class="box">
+                <a href="kam4.html">
+                <img src="worker3.jpg">
+                <h2> ₹10000/month</h2>
+                <p> Kirana Dukan ke liye 2 ladke</p>
+                <div class="addres_data">
+                    <p>Farrukhnagar near rao shab shop</p>
+                    <p> Today </p>
+                </div>
+                </a>
+            </div>
+            <div class="box">
+                <a href="kam5.html">
+                <img src="worker4.jpg">
+                <h2> ₹100/hour </h2>
+                <p> Pamphlet distributor boy </p>
+                <div class="addres_data">
+                    <p>Naharpur sec 6 Imt Manesar</p>
+                    <p> Today </p>
+                </div>
+                </a>
+            </div>
+            </div>
+
+
+
+            <div class="First_row">
+                <div class="box">
+                <a href="kam14.html">
+                <img src="worker13.jpg">
+                <h2> ₹14000/month </h2>
+                <p> Loder worker requirment </p>
+                <div class="addres_data">
+                    <p>Raj kot delhi</p>
+                    <p> JAN 14 </p>
+                </div>
+                </a>
+            </div>
+            <div class="box">
+                <a href="kam15.html">
+                <img src="worker14.jpg">
+                <h2> ₹6,000/month </h2>
+                <p> House Keeping</p>
+                <div class="addres_data">
+                    <p>DLF sec 7 gurgaon</p>
+                    <p> JUN 10</p>
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <a href="kam16.html">
+                <img src="worker15.jpg">
+                <h2> ₹1,2000 </h2>
+                <p> cyber cafe shop boy </p>
+                <div class="addres_data">
+                    <p>Rakhnauri navada</p>
+                    <p> JAN 7 </p>
+                </div>
+                </a>
+            </div>
+            <div class="box">
+                <a href="kam17.html"></a>
+                <img src="worker16.jpg" height="150px">
+                <h2> ₹8000/month </h2>
+                <p> Pamplate distributer boy</p>
+                <div class="addres_data">
+                    <p>Gurgaon sec 14</p>
+                    <p> Today </p>
+                </div>
+            </div>
+            </div>
+
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+    <!-- =============================== * ad 2 * ============================================ -->
+
+
+    <div class="ads_img2">
+        <img src="add.png">
+        <i class="fa-regular fa-rectangle-xmark" id="adicon2"></i>
+    </div>
+
+
+
+
+    <!-- =============================== * downlode * ============================================ -->
+
+
+    <div class="downlode_app">
+        <div class="downlode">
+           <span style="font-size:40px ; font-weight: bold; margin-right: 90px;"> Kam Chahiye ?</span>
+
+            <div class="text">
+                <h1> TRY THE KAM CHAHIYE APP</h1>
+                <p>Find Job Near you and Post Job Near You just about anything using <br>
+                    the app on your mobile.</p>
+            </div>
+            <div class="downlode_store">
+                <p> GET YOUR APP TODAY </p>
+                <img src="images/play store.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- =============================== * footer * ============================================ -->
+
+
+
+    <div class="Main_footer">
+        <div class="footer">
+            <div class="footer_box">
+                <h2>POPULAR LOCATIONS</h2>
+                <p> Delhi</p>
+                <p>Patna</p>
+                <p>Gurgaon</p>
+                <p>Haryana</p>
+            </div>
+            <div class="footer_box">
+                <h2>TRENDING LOCATIONS</h2>
+                <p> IMT Manesar</p>
+                <p>Gurgaon</p>
+                <p>Delhi</p>
+                <p>Patna</p>
+            </div>
+            <div class="footer_box">
+                <h2>ABOUT US</h2>
+                <p> About Kam Chahiye Group</p>
+                <p>Careers</p>
+                <p>Contact Us</p>
+                <p>kam chahiyePeople</p>
+            </div>
+            <div class="footer_box">
+                <h2>Kam chahiye</h2>
+                <p> Help</p>
+                <p>Legal & Privacy information</p>
+                <p>Blog</p>
+            </div>
+        </div>
+    </div>
+
+
+    
+
+    <script>
+
+        //  =============================== * navbar * ============================================
+
+        let contry = document.getElementById('contry');
+        let moving = document.getElementById('moving');
+        let text = document.getElementById('text');
+        let list = document.getElementById('list');
+
+
+        contry.addEventListener('click', () => {
+            list.classList.toggle('hidden');
+            moving.classList.toggle('roted')
+        });
+        function myfunction(omkar) {
+            text.innerHTML = omkar;
+        }
+
+
+        let eng_tag = document.getElementById('eng_tag');
+        let hin_eng = document.querySelector('.hin_eng');
+        let language = document.querySelector('.language');
+        
+
+
+        language.addEventListener('click', () => {
+            hin_eng.classList.toggle('display_div');
+
+        });
+        function languagekam(language) {
+            eng_tag.innerHTML = language;
+        }
+
+        let girl_img_id = document.getElementById('girl_img_id');
+        let gropdwonid = document.getElementById('gropdwonid');
+
+        girl_img_id.addEventListener('click', () => {
+            gropdwonid.classList.toggle('block_div')
+        });
+
+
+
+
+        //  =============================== * ad 1 * ============================================
+
+
+        let ad_img = document.querySelector('.ad_img');
+        let ad_icon = document.getElementById('ad_icon');
+
+
+        ad_icon.addEventListener('click', () => {
+            ad_img.style = `display: none`;
+        });
+
+
+
+
+        //  =============================== * lode more * ============================================
+
+
+        let Lode_more_id = document.getElementById('Lode_more_id');
+        let lode_more_products_id = document.getElementById('lode_more_products_id');
+
+
+        Lode_more_id.addEventListener('click', () => {
+            lode_more_products_id.style = 'display:block';
+            Lode_more_id.style = 'display:none'
+        });
+
+
+
+
+
+
+        //  =============================== * ad 2 * ============================================
+
+
+
+        let adicon2 = document.getElementById('adicon2');
+        let ads_img2 = document.querySelector('.ads_img2');
+
+        adicon2.addEventListener('click', () => {
+            ads_img2.style = 'display: none';
+        });
+
+
+
+    </script>
+
+</body>
+
+</html>
